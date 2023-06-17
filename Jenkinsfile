@@ -22,5 +22,10 @@ pipeline{
          echo "And this is the 3rd Stage"
             }
                      }
+       stage('stage-4'){
+           steps{
+               sh "vi Slave_file"
+                }
+                       }
          }
         }
