@@ -2,25 +2,25 @@ pipeline{
     agent{
       label{
         label "Master"
-         }
            }
+         }
    stages{
      stage('stage-1'){
        steps{
-         echo "Hi, this is Shrikant"
-                    }
+         echo "Hi, this is Shrikant into stage-1"
             }
-     stages{
-     stage('stage-1'){
+                     }
+
+     stage('stage-2'){
        steps{
-         echo "Hi, this is Shrikant"
-                    }
+         echo "Entering into 2nd stage"
             }
-     stages{
-     stage('stage-1'){
+                     }
+
+     stage('stage-3'){
        steps{
-         echo "Hi, this is Shrikant"
-                    }
+         echo "And this is the 3rd Stage"
             }
+                     }
          }
         }
