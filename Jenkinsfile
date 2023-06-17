@@ -24,7 +24,7 @@ pipeline{
                      }
        stage('stage-4'){
            steps{
-               sh "vi Slave_file"
+               sh "touch Slave_file"
                 }
                        }
          }
